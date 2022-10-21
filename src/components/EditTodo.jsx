@@ -15,13 +15,7 @@ function EditTodo({ userInfo, handleClose }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      let userData = { id, date, text, title };
-      const docRef = doc(db, "todos", userInfo.id);
-      await updateDoc(docRef, userData);
-    } catch (error) {
-      console.log(error);
-    }
+   
     setTitle("");
     setDate("");
     setText("");

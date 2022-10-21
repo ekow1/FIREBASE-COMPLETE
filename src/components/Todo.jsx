@@ -20,7 +20,7 @@ function User({ userInfo, updateUser, deleteUser }) {
     // deleteUser(userInfo.id);
 
     // delete userInfo.id;
-    await deleteDoc(doc(db, "todos", userInfo.id));
+
   };
 
   return (
