@@ -58,7 +58,7 @@ function AddTodo(props) {
 
         <Form.Floating>
           <Form.Control
-            style={{ height: "400px" }}
+            style={{ height: "100px" }}
             id="floatingLocationCustom"
             type="text"
             placeholder="Location"

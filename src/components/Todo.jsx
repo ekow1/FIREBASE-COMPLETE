@@ -41,11 +41,11 @@ function User({ userInfo, updateUser, deleteUser }) {
       <Col md={4}>
         <Card style={{ width: "18rem", margin: "2rem" }}>
           <Card.Body>
-            <Card.Title className="mb-4 ">NAME : {userInfo.title}</Card.Title>
+            <Card.Title className="mb-4 ">TITLE : {userInfo.title}</Card.Title>
             <Card.Title className="mb-4 ">
-              DATE RECORDED : {userInfo.date}
+              DATE  : {userInfo.date}
             </Card.Title>
-            <Card.Title className="mb-3 ">ADDRESS : {userInfo.text}</Card.Title>
+            <Card.Title className="mb-3 ">NOTE : {userInfo.text}</Card.Title>
           </Card.Body>
           <Card.Footer className=" text-center bg-light" bg="dark">
             <Button
