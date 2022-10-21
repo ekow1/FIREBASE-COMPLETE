@@ -14,13 +14,13 @@ function User({ userInfo, updateUser, deleteUser }) {
   const handleShow = () => setShow(true);
   const dispatch = useDispatch();
 
-  const handleDelete = async (e) => {
+  const handleDelete =  (e) => {
     e.preventDefault();
-    // dispatch(RemoveUser(userInfo.id));
-    // deleteUser(userInfo.id);
+    dispatch(RemoveUser(userInfo.id));
+    deleteUser(userInfo.id);
 
-    // delete userInfo.id;
-    await deleteDoc(doc(db, "todos", userInfo.id));
+    delete userInfo.id;
+   
   };
 
   return (
